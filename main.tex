@@ -47,7 +47,7 @@
 
 \title[公平なガチャ]{%
   公平なガチャ \\
-  {\normalsize \href{http://www.iwsec.org/css/2016/css2.htm}{CSS2016 CSS2.0}}
+  {\normalsize \href{http://www.iwsec.org/css/2016/css2.htm}{CSSx2.0}}
 }
 \author{吉村 優}
 \date[October 11, 2016]{%
@@ -215,7 +215,8 @@
       \end{table}
     \item<3-> 運営は割り当てた番号をユーザーへ公開する
     \item<4-> 運営は\textbf{キー}と呼ばれる数値$m \in \{1 \dots N\}$を用意する
-    \item<5-> 運営はキーのコミットメント$c := C(r, m)$を計算し、$c$をユーザーへ送信する
+    \item<5-> 運営はキーのコミットメント$c := C(r, m)$を計算し、$c$をユーザーへ送信する%
+      \footnote[frame]{コミットメント関数$C$は運営とユーザーの間で事前に共有する}
     \item<6-> ユーザーはコミットメント$c$を受けとり、
       $x \in \{1 \dots N\}$を選択し、$x$を運営へ送信する
   \end{enumerate}
